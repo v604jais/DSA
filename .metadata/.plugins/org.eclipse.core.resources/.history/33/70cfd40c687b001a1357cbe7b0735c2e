@@ -1,0 +1,31 @@
+package arrays;
+
+public class InsertOperationInArrayOfFixedSize {
+
+	public static void main(String[] args) {
+
+		int arr[] = new int[5];
+		arr[0] = 0;
+		arr[1] = 1;
+		arr[2] = 2;
+		arr[3] = 3;
+
+		insert(arr, 4, arr.length, 4);
+
+	}
+
+	public static int insert(int arr[], int filledElement, int Size, int num, int pos) {
+
+		if (filledElement == Size) {
+			return filledElement;
+		}
+
+		int index = pos - 1;
+
+		for (int i = filledElement - 1; i >= index; i--) {
+			arr[i + 1] = arr[i];
+		}
+
+	}
+
+}
