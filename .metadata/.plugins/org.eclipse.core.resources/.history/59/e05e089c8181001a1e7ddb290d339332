@@ -1,0 +1,11 @@
+package arrays;
+
+public class Leader {
+
+	public static void main(String[] args) {
+		
+		int arr[]= {7,10,4,10,6,5,2};
+
+	}
+
+}

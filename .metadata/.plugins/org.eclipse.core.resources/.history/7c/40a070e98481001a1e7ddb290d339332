@@ -1,0 +1,31 @@
+package arrays;
+
+public class Leader {
+
+	public static void main(String[] args) {
+		
+		int arr[]= {7,10,4,10,6,5,2};
+         leader(arr);
+	}
+	 public static void leader(int arr[]) {
+		 
+		 int lead=0; int currLead=0;
+		 for(int i=0; i<arr.length;i++) {
+			
+			for (int j = 1; j < arr.length; j++) {
+				if (arr[i] <= arr[j]) {
+					break;
+				} 
+				else {
+					currLead=arr[i];
+				}
+			}
+			if(lead<currLead) {
+				lead=currLead; 
+				System.out.println(lead);
+			}
+		 }
+	 }
+	
+
+}
