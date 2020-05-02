@@ -1,0 +1,12 @@
+package arrays;
+
+public class MaximumLengthOfEvenOdd {
+
+	public static void main(String[] args) {
+		
+		int a[]= {10,12,14,7,8};
+		int b[]= {7,10,13,14};
+
+	}
+
+}

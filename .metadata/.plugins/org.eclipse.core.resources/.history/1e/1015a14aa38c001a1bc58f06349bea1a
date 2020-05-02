@@ -1,0 +1,29 @@
+package arrays;
+
+public class MaximumLengthOfEvenOdd {
+
+	public static void main(String[] args) {
+
+		int a[] = { 10, 12, 14, 7, 8 };
+		int b[] = { 7, 10, 13, 14 };
+
+		maximumLengthOfEvenOdd(a);
+		maximumLengthOfEvenOdd(b);
+
+	}
+
+	private static void maximumLengthOfEvenOdd(int c[]) {
+		int count = 0;
+		int len = 1;
+		for (int i = 1; i < c.length; i++) {
+
+			if (c[i - 1] % 2 == 0 && c[i] % 2 != 0 || c[i] % 2 == 0 && c[i - 1] % 2 != 0) {
+				count++;
+				len = Math.max(count, len);
+			}
+			break;
+		}
+        System.out.println(len);
+	}
+
+}
