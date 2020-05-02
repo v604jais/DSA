@@ -1,0 +1,27 @@
+package arrays;
+
+public class MaxSumOfSubarray {
+
+	public static void main(String[] args) {
+
+		int a[] = { 0, 1, 3, -4, 10, -1, 11, -10, 3 };
+		int length = a.length;
+
+		maxContinuousSum(a, length);
+
+	}
+
+	private static void maxContinuousSum(int a[], int length) {
+		int currMax = a[0];
+		
+		for (int i = 0; i < length; i++) {
+			int maxSum = a[i];
+			for (int j = i + 1; j < length; j++) {
+				maxSum += a[j];
+				currMax = Math.max(maxSum, currMax);
+			}
+		}
+		System.out.println(currMax);
+	}
+
+}

@@ -25,7 +25,15 @@ public class TrappingRainWaterNaive {
 		}
        System.out.println(res);
        
+       List<String> names = new ArrayList<>(); 
        
+       names.add("lokesh");    //[lokesh]
+       names.add("alex");      //[lokesh, alex]
+        
+       names.set(1, "brian");  //[lokesh, brian]
+        
+       //names.remove(1); 
+       System.out.println(names);
 	}
    
 }
