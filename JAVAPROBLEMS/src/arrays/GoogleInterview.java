@@ -9,7 +9,7 @@ public class GoogleInterview {
 		//System.out.println(i+"+"+i+"="+sum);
 		Scanner input= new Scanner(System.in);
 		int n = input.nextInt(); 
-		
+		input.close();
 		for (int i=1; i<=n;i++) {
 			int sum=0;
 			

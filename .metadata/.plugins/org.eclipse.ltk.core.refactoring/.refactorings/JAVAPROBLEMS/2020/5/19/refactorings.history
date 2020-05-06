@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;arrays.MaimumDifference&apos; to &apos;MaximumDifference&apos;&#x0D;&#x0A;- Original project: &apos;JAVAPROBLEMS&apos;&#x0D;&#x0A;- Original element: &apos;arrays.MaimumDifference&apos;&#x0D;&#x0A;- Renamed element: &apos;arrays.MaximumDifference&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MaimumDifference&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;arrays{MaimumDifference.java[MaimumDifference" matchStrategy="1" name="MaximumDifference" qualified="false" references="true" similarDeclarations="false" stamp="1588535569682" textual="false" version="1.0"/>
+</session>
