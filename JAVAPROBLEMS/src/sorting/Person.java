@@ -10,9 +10,15 @@ public class Person {
 	}
 public static void main(String[] args) {
 		
-		Person p= new Person();
+		/*Person p= new Person();
 		
-		p.hunt();
+		p.hunt();*/
+	     int arr[]= {4,2};
+	     for(int e:arr)
+	    	 System.out.print(e+" ");
+	     MergeSort.mergeSort(arr, 0, 1);
+	     for(int e:arr)
+	    	 System.out.print(e+" ");
 		
 	}
 

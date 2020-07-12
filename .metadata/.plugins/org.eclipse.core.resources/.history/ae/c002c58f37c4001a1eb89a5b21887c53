@@ -1,0 +1,52 @@
+package sorting;
+
+public class MergeSort {
+
+	
+	
+	public static void main(String[] args) {
+		
+       int arr[]= {1,2,5,8,9,11,3,4,1};
+       
+       int lb=0;
+       int ub=arr.length-1;
+       
+       mergeSort(arr,lb,ub);
+       
+       for(int e :arr)
+    	   System.out.println(e);
+	}
+
+	private static void mergeSort(int[] arr, int lb, int ub) {
+		
+		if(lb<ub) {
+			
+			int mid=lb + (ub-lb)/2;
+			mergeSort(arr,lb,mid);
+			mergeSort(arr,mid+1,ub);
+			merge(arr,lb,mid,ub);
+			
+		}
+		
+	}
+
+	private static void merge(int[] arr, int lb, int mid, int ub) {
+		
+		int i=lb;
+		int j=mid+1;
+		int k=lb;
+		int[] b =new int[arr.length];
+		while(i<=mid && j<=ub) {
+			if(arr[i]<=arr[j]) {
+				b[k++]=arr[i++];
+			}else {
+				b[k++]=arr[j++];
+			}
+		}
+		if(i>mid)
+		  while(j<=ub) {b[k++]=arr[j++];}
+		else
+		  while(i<=mid) {b[k++]=arr[i++];}
+	}
+
+}
