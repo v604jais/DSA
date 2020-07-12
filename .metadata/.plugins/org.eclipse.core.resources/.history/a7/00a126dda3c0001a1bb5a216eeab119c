@@ -1,0 +1,26 @@
+package sorting;
+
+public class QuickSort {
+
+	public static void main(String[] args) {
+		
+		
+		
+
+	}
+
+	private static int partition(int[] arr, int low, int high) {
+		
+		if()
+		return 0;
+	}
+
+	private static void quickSort(int[] arr, int low, int high) {
+		//partition index
+		int pi=partition(arr,low,high);
+		//before pivot
+		quickSort(arr, low, pi-1); 
+		//after pivot
+		quickSort(arr, pi+1, high); 
+	}
+}

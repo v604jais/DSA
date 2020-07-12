@@ -1,0 +1,34 @@
+package sorting;
+
+public class QuickSort {
+
+	public static void main(String[] args) {
+		
+		int[] arr= {5, 1, 4, 2, 8};
+		int low=0;
+		int high=arr.length-1;
+		
+		quickSort(arr, low, high);
+		
+		for(int a:arr)
+			System.out.print(a);
+	}
+
+	private static int partition(int[] arr, int low, int high) {
+		
+		if()
+		return 0;
+	}
+
+	private static void quickSort(int[] arr, int low, int high) {
+		
+		if(low<high) {
+		//partition index
+		int pi=partition(arr,low,high);
+		//before pivot
+		quickSort(arr, low, pi-1); 
+		//after pivot
+		quickSort(arr, pi+1, high); 
+		}
+	}
+}

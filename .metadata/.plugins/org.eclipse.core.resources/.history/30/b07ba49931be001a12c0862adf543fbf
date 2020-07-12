@@ -1,0 +1,13 @@
+package sorting;
+
+import competetive.Deer;
+
+public class Person {
+
+	public void hunt() {
+		Deer d= new Deer();
+		d.play();
+	}
+
+	
+}
